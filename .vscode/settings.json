@@ -1,0 +1,15 @@
+{
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[css]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "editor.formatOnSave": true
+}

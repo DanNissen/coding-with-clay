@@ -1,12 +1,14 @@
-console.log("foo")
 
 const foo = document.getElementById("foo")
 
-const changeToRed = () => {foo.style["backgroundColor"] = "red"}
-const toggleVisible = () => {
-    if(foo.hidden){
-        foo.hidden = false
+console.log(foo)
+
+const toggleColor = () => {
+    if (foo.style["backgroundColor"] === "red") {
+        foo.style["backgroundColor"] = "blueviolet"
     } else {
-        foo.hidden = true
-    }   
+        foo.style["backgroundColor"] = "red"
+    }
 }
+
+const toggleVisible = () => { foo.hidden = !foo.hidden }

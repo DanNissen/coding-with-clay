@@ -6,3 +6,40 @@
     font-size: 60px;
     font-weight: bolder;
 }
+
+/* Background Color Picker*/
+
+ul {
+    list-style: none;
+    border: 1px solid black;
+    width: 50px;
+    height: fit-content;
+    padding-left: 0;
+    margin-left: 100px;
+}
+
+li {
+    display: block;
+    width: 50px;
+    height: 20px;
+    border-bottom: 1px solid black;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+}
+
+#green {
+    background-color: green;
+    color: white;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#purple {
+    background-color: purple;
+    color: white;
+}

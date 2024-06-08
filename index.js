@@ -12,3 +12,25 @@ const toggleColor = () => {
 }
 
 const toggleVisible = () => { foo.hidden = !foo.hidden }
+
+document.getElementById('blue').addEventListener('click', partyBlue)
+document.getElementById('green').addEventListener('click', partyGreen)
+document.getElementById('yellow').addEventListener('click', partyYellow)
+document.getElementById('purple').addEventListener('click', partyPurple)
+
+
+function partyBlue() {
+    document.querySelector('body').style.backgroundColor = 'blue'
+}
+
+function partyGreen() {
+    document.querySelector('body').style.backgroundColor = 'green'
+}
+
+function partyYellow() {
+    document.querySelector('body').style.backgroundColor = 'yellow'
+}
+
+function partyPurple() {
+    document.querySelector('body').style.backgroundColor = 'purple'
+}

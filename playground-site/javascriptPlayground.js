@@ -8,3 +8,18 @@ const test = () => {
 console.log(foobar)
 test()
 console.log(foobar)
+
+// Arrow function practice
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes();
+    else no();
+}
+
+ask(
+    "Are you not clay or dan",
+    () => alert("please leave this site"),
+    () => alert("welcome")
+);
+
+"how are you today?"

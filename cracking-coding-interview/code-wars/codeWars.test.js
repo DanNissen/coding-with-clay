@@ -26,3 +26,9 @@ describe("code wars petal challenge", ()=>{
         expect(howMuchILoveYou(9)).toBe("a lot")
     })
 })
+
+describe("code wars filter challeng", ()=>{
+    it("create a filter function without using the filter function", ()=>{
+        expect(fakeFilter([10, 12, 14, 17, 15], 17)).toBe([10, 12, 14, 15])
+    })
+})

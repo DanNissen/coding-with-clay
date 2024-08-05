@@ -36,3 +36,7 @@ export function howMuchILoveYou (nbPetals) {
     }
 }
 
+export function fakeFilter (array, num) {
+    
+}
+

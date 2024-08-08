@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -27,8 +27,22 @@ describe("code wars petal challenge", ()=>{
     })
 })
 
+//need dans help on this one
 describe("code wars filter challeng", ()=>{
     it("create a filter function without using the filter function", ()=>{
         expect(fakeFilter([10, 12, 14, 17, 15], 17)).toBe([10, 12, 14, 15])
     })
+})
+
+describe("code wars Boredom Score challenge", ()=>{
+    it("takes in an object of staff members with names as keys and what they are doing as values and returens a boredom score for the office", ()=>{
+        expect(boredom({tim: 'change', jim: 'accounts',
+            randy: 'canteen', sandy: 'change', andy: 'change', katie: 'IS',
+            laura: 'change', saajid: 'IS', alex: 'trading', john: 'accounts',
+            mr: 'finance' })).toBe('kill me now')
+        expect(boredom({ tim: 'IS', jim: 'finance',
+            randy: 'pissing about', sandy: 'cleaning', andy: 'cleaning',
+            katie: 'cleaning', laura: 'pissing about', saajid: 'regulation',
+            alex: 'regulation', john: 'accounts', mr: 'canteen' }))
+    .toBe('i can handle this')
 })

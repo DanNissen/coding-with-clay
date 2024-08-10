@@ -95,3 +95,9 @@ export function lovefunc(flower1, flower2){
       return false
     }
   }
+
+  export function find (a, e) {
+    let f = a.indexOf(e)
+ 
+    return f === -1 ? "Not found" : f
+  }

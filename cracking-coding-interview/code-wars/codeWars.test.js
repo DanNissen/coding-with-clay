@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -62,5 +62,13 @@ describe("code wars love function challenge", () => {
         expect(lovefunc(2,2)).toBe(false)
         expect(lovefunc(0,1)).toBe(true)
         expect(lovefunc(10, 7)).toBe(true)
+    })
+})
+
+describe("code wars refactor find the index of an array", ()=>{
+    it("create a function that accepts an array and element and return the index of the element. less the 85 characters", ()=>{
+        expect(find([2,3,5,7,11], 5)).toBe(2)
+        expect(find([2,3,5,7,11], 11)).toBe(4)
+        expect(find([2,3,5,7,11], 6)).toBe("Not found")
     })
 })

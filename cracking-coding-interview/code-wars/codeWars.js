@@ -101,3 +101,14 @@ export function lovefunc(flower1, flower2){
  
     return f === -1 ? "Not found" : f
   }
+
+
+  export function removeExclamation (string) {
+ 
+    let newString = string.replaceAll("!", "")
+    
+      newString += "!"
+    
+    return newString
+   
+  }

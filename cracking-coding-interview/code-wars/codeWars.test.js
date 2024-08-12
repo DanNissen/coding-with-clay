@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -70,5 +70,13 @@ describe("code wars refactor find the index of an array", ()=>{
         expect(find([2,3,5,7,11], 5)).toBe(2)
         expect(find([2,3,5,7,11], 11)).toBe(4)
         expect(find([2,3,5,7,11], 6)).toBe("Not found")
+    })
+})
+
+describe("code wars remove all exclamation points from a string except the one at the end", ()=>{
+    it("remvoes all exclamation points from a string except for the one at the end of the string" , ()=>{
+        expect(removeExclamation("Hi!!!!")).toBe("Hi!")
+        expect(removeExclamation("Hey! I love you!")).toBe("Hey I love you!")
+        expect(removeExclamation("Clay rules!")).toBe("Clay rules!")
     })
 })

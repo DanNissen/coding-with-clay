@@ -122,3 +122,15 @@ export function removeExclamation(string) {
   return newString
 
 }
+
+export function shorterReverseLonger(a, b) {
+  if (a.length >= b.length) {
+    let aReverse = a.split("").reverse().join("")
+
+    return b + aReverse + b
+  } else {
+    let bReverse = b.split("").reverse().join("")
+
+    return a + bReverse + a
+  }
+}

@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -88,5 +88,12 @@ describe("code wars remove all exclamation points from a string except the one a
         expect(removeExclamation("Hi!!!!")).toBe("Hi!")
         expect(removeExclamation("Hey! I love you!")).toBe("Hey I love you!")
         expect(removeExclamation("Clay rules!")).toBe("Clay rules!")
+    })
+})
+
+describe("code wars shorter reverse longer", () => {
+    it("takes two strings and returns a string where the the shorter string is the prefix and suffix and the longer one is reversed in middle if string are equal treat a longer", () => {
+        expect(shorterReverseLonger("as", "hii")).toBe("asiihas")
+        expect(shorterReverseLonger("bingo", "balls")).toBe("ballsognibballs")
     })
 })

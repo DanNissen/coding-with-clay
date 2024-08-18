@@ -134,3 +134,11 @@ export function shorterReverseLonger(a, b) {
     return a + bReverse + a
   }
 }
+
+export function doubleEveryOther(a) {
+  let newArray = []
+
+  a.forEach((x, i) => i % 2 === 0 ? newArray.push(x) : newArray.push(x * 2))
+
+  return newArray
+}

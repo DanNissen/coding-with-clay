@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger, doubleEveryOther } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -95,5 +95,11 @@ describe("code wars shorter reverse longer", () => {
     it("takes two strings and returns a string where the the shorter string is the prefix and suffix and the longer one is reversed in middle if string are equal treat a longer", () => {
         expect(shorterReverseLonger("as", "hii")).toBe("asiihas")
         expect(shorterReverseLonger("bingo", "balls")).toBe("ballsognibballs")
+    })
+})
+
+describe("code wars double every other", () => {
+    it("takes in an array and doubles every other number in the array, first double is index 1", () => {
+        expect(doubleEveryOther([1, 2, 3, 4])).toEqual([1, 2, 3, 8])
     })
 })

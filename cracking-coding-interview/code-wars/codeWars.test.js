@@ -100,6 +100,6 @@ describe("code wars shorter reverse longer", () => {
 
 describe("code wars double every other", () => {
     it("takes in an array and doubles every other number in the array, first double is index 1", () => {
-        expect(doubleEveryOther([1, 2, 3, 4])).toEqual([1, 2, 3, 8])
+        expect(doubleEveryOther([1, 2, 3, 4])).toEqual([1, 4, 3, 8])
     })
 })

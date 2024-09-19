@@ -142,3 +142,29 @@ export function doubleEveryOther(a) {
 
   return newArray
 }
+
+//This one confused me
+
+//('abcdefg&%$', x -> isLetter(x)) == true
+// ('&%$=', x -> isLetter x) == false
+// ('abcdefg', x -> isLetter x) == false
+
+// ([4, 1], x -> x > 3) == true
+// ([1, 1], x -> x > 3) == false
+// ([4, 4], x -> x > 3) == false
+
+// const someButNotAll = (seq,pred) => {
+//   let numMatch = 0
+  
+//   for (i=0; i<seq.length; i++){
+//     if (seq[i]=== pred){
+//       numMatch += 1
+//     }
+//   }
+   
+//    if (numMatch === seq.length || numMatch === 0){
+//      return false
+//    } else {
+//      return true
+//    }
+//  }

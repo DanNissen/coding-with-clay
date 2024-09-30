@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger, doubleEveryOther } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger, doubleEveryOther, peakAndValley } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {
@@ -101,5 +101,11 @@ describe("code wars shorter reverse longer", () => {
 describe("code wars double every other", () => {
     it("takes in an array and doubles every other number in the array, first double is index 1", () => {
         expect(doubleEveryOther([1, 2, 3, 4])).toEqual([1, 4, 3, 8])
+    })
+})
+
+describe("code wars peaks and valleys", () => {
+    it("takes in array and returns numbers that are either greater than the three on either side or less than three on either side", () => {
+        expect(peakAndValley([10, 20, 30, 40, 30, 20, 10, 11, 12, 13, 14, 15, 16, 15, 14, 13])).toBe([40, 10, 16])
     })
 })

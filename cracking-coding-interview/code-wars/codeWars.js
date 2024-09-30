@@ -155,16 +155,27 @@ export function doubleEveryOther(a) {
 
 // const someButNotAll = (seq,pred) => {
 //   let numMatch = 0
-  
+
 //   for (i=0; i<seq.length; i++){
 //     if (seq[i]=== pred){
 //       numMatch += 1
 //     }
 //   }
-   
+
 //    if (numMatch === seq.length || numMatch === 0){
 //      return false
 //    } else {
 //      return true
 //    }
 //  }
+
+export function peakAndValley(arr) {
+  let peaksAndValleys = [];
+
+  arr.forEach(x, i => {
+    if (x > arr[i - 1] && x > arr[i - 2] && x > arr[i - 3] && x > arr[i + 1] && x > arr[i + 2] && x > arr[i + 3] || x < arr[i - 1] && x < arr[i - 2] && x < arr[i - 3] && x < arr[i + 1] && x < arr[i + 2] && x < arr[i + 3]) {
+      peaksAndValleys.push(x)
+    }
+  })
+  return peaksAndValleys
+}

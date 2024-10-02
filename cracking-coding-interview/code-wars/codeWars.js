@@ -192,3 +192,11 @@ export function partyPeople(arr) {
   })
 
 }
+
+export function noOdds(values) {
+  let evens = [];
+  let odd = [];
+  values.forEach(x => x % 2 === 0 ? evens.push(x) : odd.push(x))
+
+  return evens
+}

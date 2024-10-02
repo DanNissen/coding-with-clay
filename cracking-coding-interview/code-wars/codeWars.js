@@ -179,3 +179,16 @@ export function peakAndValley(arr) {
   })
   return peaksAndValleys
 }
+
+export function partyPeople(arr) {
+  let peopleStaying = 0;
+
+  arr.forEach(x => {
+    if (x <= arr.length) {
+      peopleStaying += 1
+    }
+
+    return peopleStaying
+  })
+
+}

@@ -1,4 +1,4 @@
-import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger, doubleEveryOther, peakAndValley } from "./codeWars"
+import { doubleCharacters, returnPositiveOdd, howMuchILoveYou, boredom, lovefunc, fakeFilter, find, removeExclamation, shorterReverseLonger, doubleEveryOther, peakAndValley, partyPeople } from "./codeWars"
 
 
 describe("code wars double character challenge", () => {

@@ -200,3 +200,19 @@ export function noOdds(values) {
 
   return evens
 }
+
+
+//you will be given a string and your task will be to return a list of ints detailing the count of uppercase letters, lowercase, numbers and special characters (everything else), as follows.
+
+
+export function solve(s) {
+  let uppercase = 0
+  let lowercase = 0
+  let number = 0
+  let special = 0
+
+  s.split("").forEach(x => {
+    if ((^?=.* [a - z]))
+    
+  })
+}
